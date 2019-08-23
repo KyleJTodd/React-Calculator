@@ -7,13 +7,13 @@
     "chai": "^4.2.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-scripts": "^3.0.1"
   },
   "dependencies": {
     "big.js": "^5.2.2",
-    "github-fork-ribbon-css": "^0.2.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "github-fork-ribbon-css": "^0.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,5 +36,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "Calculator\r ---",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyleJTodd/React-Calculator.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ahfarmer/calculator/issues"
   }
 }

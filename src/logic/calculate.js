@@ -2,6 +2,7 @@ import Big from "big.js";
 
 import operate from "./operate";
 import isNumber from "./isNumber";
+import { strict } from "assert";
 
 /**
  * Given a button name and a calculator data object, return an updated
@@ -100,6 +101,35 @@ export default function calculate(obj, buttonName) {
     }
     return {};
   }
+
+
+  // new delete function
+  if (buttonName === "Del") {
+    if (obj.next) {
+      let desiredLength = obj.next.length - 1;
+      let charAt = obj.next.substr(0, desiredLength);
+      return {
+        total: null,
+        next: charAt.toString(),
+        operation: null
+      };
+    } else if (obj.total) {
+      return {
+        total: null,
+        next: null,
+        operation: null
+      };
+    }
+    return {};
+  }
+
+
+
+
+
+
+
+
 
   // Button must be an operation
 

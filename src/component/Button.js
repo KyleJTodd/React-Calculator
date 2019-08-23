@@ -18,7 +18,7 @@ export default class Button extends React.Component {
     const className = [
       "component-button",
       this.props.orange ? "orange" : "",
-      this.props.wide ? "wide" : "",
+      this.props.green ? "green" : ""
     ];
 
     return (
