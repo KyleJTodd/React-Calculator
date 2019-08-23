@@ -105,21 +105,28 @@ export default function calculate(obj, buttonName) {
 
   // new delete function
   if (buttonName === "Del") {
+    //if before user has performed an equation we will execute this version of delete function
     if (obj.next) {
+      //grab the current length of the string occupying the "next" state minus one
       let desiredLength = obj.next.length - 1;
+      //create a new string that is identical to the previous string minus one character
       let charAt = obj.next.substr(0, desiredLength);
       return {
+        //update the state with our desired outcome
         total: null,
         next: charAt.toString(),
         operation: null
       };
+      //if user has performed an equation this will execute
     } else if (obj.total) {
+      //clear the state of all info and return to blank
       return {
         total: null,
         next: null,
         operation: null
       };
     }
+    // if there is no information in the state do nothing
     return {};
   }
 

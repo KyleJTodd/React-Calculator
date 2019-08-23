@@ -18,6 +18,7 @@ export default class Button extends React.Component {
     const className = [
       "component-button",
       this.props.orange ? "orange" : "",
+      //allow the AC button to be changed
       this.props.green ? "green" : ""
     ];
 

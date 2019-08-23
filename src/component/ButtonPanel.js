@@ -17,6 +17,7 @@ export default class ButtonPanel extends React.Component {
     return (
       <div className="component-button-panel">
         <div>
+          {/* aesthetic changes to the AC button */}
           <Button name="AC" clickHandler={this.handleClick} green />
           <Button name="+/-" clickHandler={this.handleClick} />
           <Button name="%" clickHandler={this.handleClick} />
@@ -41,7 +42,7 @@ export default class ButtonPanel extends React.Component {
           <Button name="+" clickHandler={this.handleClick} orange />
         </div>
         <div>
-          {/* removed wide tag to allow del button room */}
+          {/* removed wide tag to allow Del button room */}
           <Button name="0" clickHandler={this.handleClick} />
           <Button name="." clickHandler={this.handleClick} />
           {/* created the del button */}
